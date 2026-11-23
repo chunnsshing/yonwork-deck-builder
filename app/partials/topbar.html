@@ -1,8 +1,10 @@
-<!-- Starter-pack top bar (shared look across the three tools; see docs/integration.md).
-     The switcher links are filled from site.yaml starter_pack by app.js. -->
-  <header class="top glass">
-    <div class="mark" aria-hidden="true">Y</div>
+<!-- Top bar: Back to the AI Sales Kit (hub) · YonWork brand · tool name · links (new tab) · language.
+     Same family as the other starter-pack pages (light, red accents), but its own layout. -->
+  <header class="top">
+    <a class="back" id="back" hidden><span class="chev" aria-hidden="true">‹</span><span id="back-label"></span></a>
+    <a class="brand" href="./" aria-label="YonWork"><img class="icon" src="@ICON@" alt=""><img class="word" src="@WORDMARK@" alt="YonWork"></a>
+    <span class="sep" aria-hidden="true"></span>
     <h1><span data-t="top.title"></span><small data-t="top.sub"></small></h1>
-    <nav class="pack" id="pack" aria-label="YonWork Starter Pack"></nav>
+    <nav class="links" id="links" aria-label="Related"></nav>
     <div class="pill" id="lang" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="zh">中文</button></div>
   </header>

@@ -171,8 +171,8 @@ def check_renderers(mods):
 
 
 def resolve_site_links(site, facts):
-    for item in site.get("starter_pack", []):
-        item["url"] = resolve(item["url"], facts, "en", "site.yaml starter_pack", set())
+    for item in site.get("top_links", []):
+        item["url"] = resolve(item["url"], facts, "en", "site.yaml top_links", set())
 
 
 # ───────────────────────── output
@@ -245,7 +245,9 @@ def main():
     page = read("app/index.html")
     page = page.replace("/*@APP_CSS*/", read("runtime/deck.css") + "\n" + read("app/app.css"))
     page = page.replace("/*@KIT*/", kit.replace("</script", "<\\/script"))
-    page = page.replace("<!--@TOPBAR-->", read("app/partials/topbar.html"))
+    icon = "data:image/png;base64," + base64.b64encode((ROOT / "assets/yonwork-icon.png").read_bytes()).decode()
+    word = "data:image/svg+xml;base64," + base64.b64encode((ROOT / "assets/yonwork-wordmark.svg").read_bytes()).decode()
+    page = page.replace("<!--@TOPBAR-->", read("app/partials/topbar.html").replace("@ICON@", icon).replace("@WORDMARK@", word))
     page = page.replace("/*@SHARE_JS*/", read("app/share.js"))
     page = page.replace("/*@APP_JS*/", read("app/app.js"))
     if content_lint.scan_dist(page):

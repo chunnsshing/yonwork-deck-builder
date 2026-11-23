@@ -92,11 +92,15 @@ fields:
   erp:         { enabled: false, label: { en: "Client ERP", zh: "客户 ERP" }, options: [YonSuite, YonBIP, NC Cloud] }
   date:        { enabled: false, label: { en: "Meeting date", zh: "会议日期" } }
 
-# Starter-pack switcher in the top bar. URLs for the other two tools come from facts.links.
-starter_pack:
-  - { id: scenarios, label: { en: "Scenarios", zh: "场景库" },   url: "{{facts.links.scenarios_url}}" }
-  - { id: deck,      label: { en: "Deck builder", zh: "演示文稿" }, url: "./", current: true }
-  - { id: estimator, label: { en: "Estimator", zh: "费用估算" }, url: "{{facts.links.estimator_url}}" }
+# Top bar. The deck builder is one step of the AI Sales Kit (the starter-pack hub, which also holds pricing):
+# "Back" returns to the hub. Leave hub.url empty until the hub's address is known; the button then goes back
+# in browser history when the builder was opened from another page, and hides otherwise.
+hub:
+  url: ""
+  label: { en: "AI Sales Kit", zh: "AI 销售资料包" }
+# Extra links in the top bar; they open in a new tab.
+top_links:
+  - { id: scenarios, label: { en: "Scenario library", zh: "场景库" }, url: "{{facts.links.scenarios_url}}" }
 
 # Small fixed labels drawn by layouts (not module content). Reviewed together with the modules.
 deck_labels:

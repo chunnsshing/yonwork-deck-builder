@@ -1,5 +1,6 @@
 # Builder UI strings (EN / 中文). The deck's own words live in content/; this file is only the builder.
 top:
+  back:         { en: "Back", zh: "返回" }
   title:        { en: "Deck builder", zh: "演示文稿生成" }
   sub:          { en: "Client-ready decks on how enterprise AI works", zh: "为客户生成讲解企业 AI 原理的演示文稿" }
 steps:

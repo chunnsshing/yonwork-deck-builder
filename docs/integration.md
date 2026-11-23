@@ -1,89 +1,69 @@
-# Starter-pack integration (proposed patches)
+# How the deck builder fits into the AI Sales Kit
 
-The three YonWork Starter Pack tools should share one top-bar switcher, so a salesperson can move between them:
+The **AI Sales Kit** (AI 销售资料包) is the starter-pack hub. It walks a salesperson through four steps, and each step
+is either a page of the kit or a separate tool:
 
-| Tool | Answers | URL |
+| Kit step | What it is | Where it lives |
 |---|---|---|
-| Scenario library | "Show me it working" | https://yonyou.com.sg/yonwork-cases/ (repo `yonyou-ai-cases`) |
-| **Deck builder** | "How does it work, and can we trust it?" | https://chunnsshing.github.io/yonwork-deck-builder/ (this repo; assumed Pages URL) |
-| AI estimator | "What would it cost?" | https://chunnsshing.github.io/yonwork-estimator/ (repo `yonwork-estimator`) |
+| **01 Pitch** (讲) | Explain how enterprise AI works and why it can be trusted | **This deck builder** (the kit's "intro deck and talk track" placeholder) |
+| **02 Case library** (案例库) | Find scenarios by domain | Scenario library: https://chunnsshing.github.io/yonyou-ai-cases/ (opens in a new tab) |
+| **03 Hands-on demo** (上手演示) | Sign in, tour YonWork, run a playbook live | Pages inside the kit |
+| **04 Pricing** (报价) | Explain AU and quote | Pages inside the kit; the quotation tool (estimator) merges in here |
 
-This repo already has the switcher (`app/partials/topbar.html`, links from `site.yaml` → `starter_pack`).
-**This document only proposes changes for the other two repos.** Nothing here has been applied to them;
-make each change in its own repo, following that repo's CLAUDE.md.
+Two kinds of links:
 
-Labels (EN / 中文): **Scenarios / 场景库 · Deck builder / 演示文稿 · Estimator / 费用估算**. The current tool is highlighted
-(`class="on"`, `aria-current="page"`). Links to the other tools open in the same tab.
+- **Kit → deck builder:** opens in the **same tab**. The deck builder's top bar has a **‹ AI Sales Kit** button that
+  goes back.
+- **Anything → scenario library:** opens in a **new tab** (`target="_blank" rel="noopener"`). It's a separate site
+  that people browse alongside.
 
----
-
-## 1. Shared snippet
-
-Markup (the current tool gets `class="on" aria-current="page"` and `href="./"`):
-
-```html
-<nav class="pack" aria-label="YonWork Starter Pack">
-  <a href="https://yonyou.com.sg/yonwork-cases/" data-t="packScenarios">Scenarios</a>
-  <a href="https://chunnsshing.github.io/yonwork-deck-builder/" data-t="packDeck">Deck builder</a>
-  <a href="https://chunnsshing.github.io/yonwork-estimator/" data-t="packEstimator">Estimator</a>
-</nav>
-```
-
-Style (same as the deck builder; uses each repo's existing `--line`, `--ink2`, `--red` tokens or the fallbacks):
-
-```css
-.pack{display:inline-flex;flex:none;background:rgba(255,255,255,.6);border-radius:999px;padding:3px;box-shadow:inset 0 0 0 1px var(--line,rgba(20,20,40,.09))}
-.pack a{padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;color:var(--ink2,#48484A);text-decoration:none;white-space:nowrap}
-.pack a:not(.on):hover{color:var(--ink,#1C1C1E)}
-.pack a.on{background:#fff;color:var(--red,#E3202C);box-shadow:0 1px 3px rgba(20,20,40,.15)}
-@media (max-width:640px){.pack a{padding:6px 9px;font-size:12px}}
-```
-
-Strings:
-
-```yaml
-packScenarios: { en: "Scenarios",    zh: "场景库" }
-packDeck:      { en: "Deck builder", zh: "演示文稿" }
-packEstimator: { en: "Estimator",    zh: "费用估算" }
-```
+This repo only changes the deck builder. The kit's source isn't in this repo, so the kit changes below are
+proposals to apply in the kit's own repo.
 
 ---
 
-## 2. `yonwork-estimator` (single `index.html`)
+## 1. Deck builder side (done here)
 
-1. **Markup.** In `<header class="top glass">`, insert the snippet right after the `<h1>…</h1>`, before the existing
-   page tabs (`<div class="pill nav" …>`). Mark the Estimator link as current:
-   `<a href="./" class="on" aria-current="page" data-t="packEstimator">Estimator</a>`.
-2. **CSS.** Add the `.pack` rules next to the existing `.pill` rules (the estimator's `:root` already defines `--line`,
-   `--ink2` and `--red`).
-3. **Strings.** Add the three keys to the estimator's EN/ZH string table, so its language pill switches them with the
-   rest of the UI (the existing `data-t` mechanism already handles this).
-4. **Narrow screens.** The header already holds two pills and two buttons; at ≤ 900 px let `.top` wrap
-   (`flex-wrap:wrap`) and give `.pack` `order:3` so it drops to its own line, as the deck builder does.
+- Top bar: **‹ AI Sales Kit** · YonWork logo · "Deck builder" · **Scenario library ↗** (new tab) · EN / 中文.
+  The old Scenarios · Deck builder · Estimator switcher is gone. Pricing now lives in the kit.
+- `site.yaml` → `hub.url`: the kit's address, **still to fill in**. Until then, Back goes back in browser history when
+  the builder was opened from another page, and hides when it was opened directly.
+  Once the kit is live, set it to the kit's Pitch page, e.g. `https://<kit-address>/#/pitch`.
+- The scenario library URL is `content/facts.yaml` → `links.scenarios_url`. It drives the top-bar link and the
+  "See it working" QR code on the deck's thank-you slide.
 
-## 3. `yonyou-ai-cases` (generated by `build.py` from `template/index.html`)
+## 2. Kit side (proposed)
 
-1. **Markup.** In the site header template (`<header class="site">…<nav class="noprint">`), insert the snippet as the
-   first child of the `<nav>`, before the language button. Mark Scenarios as current
-   (`href="./"`, `class="on"`, `aria-current="page"`).
-2. **CSS.** Add the `.pack` rules to the template's `<style>`. The library's brand colour variable is `--brand`, so use
-   `color:var(--brand)` for `.pack a.on`.
-3. **Strings.** Add the three keys to the template's UI string table (`U()`), EN and ZH. The library defaults to Chinese
-   (`default_lang: zh` in its `site.yaml`), so the Chinese labels show first.
-4. **Mobile.** The existing ≤ 560 px rule hides `.site nav a.nav`; keep `.pack` visible but compact (the `@media` rule
-   above), or hide the two non-current links if the header gets too tight.
+1. **01 Pitch → deck builder.** Replace the Pitch placeholder with one card that opens the deck builder in the same
+   tab, plus a one-line how-to. Suggested content:
+   - title: 用演示文稿生成器讲清原理 / Build the pitch deck
+   - line: 选听众、填客户名，两分钟导出可编辑的 PowerPoint 或 HTML。 / Pick the audience, type the client name,
+     export an editable PowerPoint or HTML in two minutes.
+   - link: `https://chunnsshing.github.io/yonwork-deck-builder/`. Add `#/b?v=1&lang=zh&s=2&it=0&m=&a=` to open
+     in Chinese with the stage-2 preset. **Never put a client name in this link.**
+   - Optionally a thumbnail: `docs/img/1-stage-and-client.png` from this repo.
+2. **02 Case library → new address.** The kit's library constant still points at the old yonyou.com.sg address.
+   Change it to `https://chunnsshing.github.io/yonyou-ai-cases/`. The case links already open in a new tab; keep
+   that for the "Open the case library ↗" button too.
+3. **04 Pricing ← quotation.** Merge the estimator into the Pricing step (replace the "quoter" placeholder),
+   either as kit pages or as a link to the estimator with its own Back button to the kit.
+4. **Top bar.** The kit's top bar (logo · 01–04 steps · language) is the hub's own design. The deck builder and
+   estimator should look like the same family (light background, red accent, same type) without copying it exactly:
+   each keeps its own layout, with a Back button to the kit.
 
-## 4. Links into the deck builder (optional)
+## 3. Decide before linking
 
-- From a scenario page: "Explain how it works →" linking to the deck builder with a stage pre-selected, e.g.
-  `https://chunnsshing.github.io/yonwork-deck-builder/#/b?v=1&lang=zh&s=2&it=0&m=&a=`. An empty `m=` opens the
-  stage-2 preset defaults. **Never put a client name in a link from a public page.**
-- The deck's thank-you slide already links back to the library and the estimator (QR codes from
-  `content/facts.yaml` → `links`). If either URL changes, update `facts.yaml` and rebuild.
+- **Public vs internal.** The deck builder and the scenario library are public sites. If the kit holds internal
+  material (pricing, demo set-up), keep it off public pages:
+  - the deck builder's Back button only *returns* to the kit, which is fine;
+  - the deck's thank-you slide is shown to clients, so its QR codes must never point to the kit.
+- **The thank-you slide's "What it would cost" QR** currently points to the public estimator
+  (`facts.yaml` → `links.estimator_url`). When the estimator merges into the kit:
+  - point the QR to a client-facing page instead;
+  - or replace that card with a second client-facing link.
 
-## 5. Check after applying
+## 4. Check after applying
 
-- All three tools show the same three labels in the same order, in both languages, with the current one highlighted.
-- No new network requests (the switcher is plain links; no fonts, icons or scripts).
-- The deck builder's Pages URL above matches the repo name chosen at deploy time. If it differs, update this file and
-  the two patches.
+- Kit → 01 Pitch → deck builder → **‹ AI Sales Kit** returns to the kit, in the same language.
+- Every scenario-library link opens in a new tab and lands on `chunnsshing.github.io/yonyou-ai-cases`.
+- No client name appears in any link from the kit.

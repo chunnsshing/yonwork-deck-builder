@@ -69,9 +69,16 @@
     $('client').placeholder = t('client.placeholder');
     $('dl-html').title = '';
     [].forEach.call($('lang').children, function(b){ b.classList.toggle('on', b.dataset.l === state.lang); b.setAttribute('aria-pressed', b.dataset.l === state.lang); });
-    $('pack').innerHTML = (S.starter_pack || []).map(function(p){
-      return '<a href="' + esc(p.url) + '"' + (p.current ? ' class="on" aria-current="page"' : ' rel="noopener"') + '>' + esc(p.label[state.lang] || p.label.en) + '</a>';
+    $('links').innerHTML = (S.top_links || []).map(function(p){
+      return '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.label[state.lang] || p.label.en) + '<span class="ext" aria-hidden="true">↗</span></a>';
     }).join('');
+    var hub = S.hub || {}, back = $('back');
+    $('back-label').textContent = (hub.label || {})[state.lang] || t('top.back');
+    if (hub.url) { back.href = hub.url; back.hidden = false; back.onclick = null; }
+    else if (document.referrer && history.length > 1) { back.removeAttribute('href'); back.hidden = false; back.setAttribute('role', 'button'); back.tabIndex = 0;
+      back.onclick = function(e){ e.preventDefault(); history.back(); }; }
+    else back.hidden = true;
+    back.title = t('top.back');
   }
 
   /* ───────── step 1: stages ───────── */

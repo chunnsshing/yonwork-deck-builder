@@ -3,10 +3,9 @@
 Build a client-ready deck on **how enterprise AI works, and why it can be trusted**, in about two minutes.
 Pick who's in the room, type the client's name, export as **editable PowerPoint** or a **one-file HTML deck**.
 
-One of three tools in the **YonWork Starter Pack**:
-[Scenarios](https://yonyou.com.sg/yonwork-cases/) (see it working) ·
-**Deck builder** (how it works) ·
-[Estimator](https://chunnsshing.github.io/yonwork-estimator/) (what it costs).
+Step **01 Pitch** of the **AI Sales Kit** (pitch → case library → hands-on demo → pricing).
+The top bar's **‹ AI Sales Kit** button goes back to the kit, and **Scenario library ↗** opens the
+[scenario library](https://chunnsshing.github.io/yonyou-ai-cases/) in a new tab. See `docs/integration.md`.
 
 **Privacy:** the builder is one static page. Nothing you type leaves your browser. There's no login, no server,
 no analytics and no fonts or scripts loaded from anywhere else.
