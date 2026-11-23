@@ -1,0 +1,11 @@
+id: house-rules
+section: frame
+title: House rule · no jargon
+title_zh: 约定：不说行话
+layout: statement
+audience: [biz]
+minutes: 0.5
+origin: extracted
+slide: {eyebrow: One house rule, heading: No jargon., lede: 'If anything sounds like jargon, put your hand up and we''ll explain it in plain English.'}
+zh_status: draft
+zh: {eyebrow: 一条约定, heading: 不说行话。, lede: 如果听到任何像行话的词，请随时举手，我们用大白话解释。}

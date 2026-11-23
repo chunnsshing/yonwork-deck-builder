@@ -1,0 +1,57 @@
+# Builder UI strings (EN / 中文). The deck's own words live in content/; this file is only the builder.
+top:
+  title:        { en: "Deck builder", zh: "演示文稿生成" }
+  sub:          { en: "Client-ready decks on how enterprise AI works", zh: "为客户生成讲解企业 AI 原理的演示文稿" }
+steps:
+  room:         { en: "Who's in the room", zh: "听众是谁" }
+  client:       { en: "Client name", zh: "客户名称" }
+  topics:       { en: "Topics", zh: "主题" }
+  export:       { en: "Preview and export", zh: "预览与导出" }
+stage:
+  label:        { en: "Stage", zh: "阶段" }
+  with_it:      { en: "with IT", zh: "含 IT" }
+  it:           { en: "IT in the room", zh: "有 IT 参会" }
+  it_hint:      { en: "Adds the architecture and security slides", zh: "加入架构与安全相关页面" }
+  min:          { en: "min", zh: "分钟" }
+  confirm:      { en: "Switching stage replaces your current topic selection. Continue?", zh: "切换听众类型会替换当前已选主题，是否继续？" }
+client:
+  placeholder:  { en: "e.g. Acme Trading", zh: "例如：Acme Trading" }
+  privacy:      { en: "Nothing you type leaves this browser.", zh: "您输入的内容不会离开此浏览器。" }
+  required:     { en: "Enter the client name to export.", zh: "请输入客户名称后再导出。" }
+topics:
+  frame:        { en: "Opening and close", zh: "开场与结尾" }
+  appendix:     { en: "Move to appendix", zh: "移到附录" }
+  in_appendix:  { en: "Appendix", zh: "附录" }
+  draft:        { en: "Draft", zh: "草稿" }
+  draft_tip:    { en: "New content, waiting for approval. It can't be exported yet.", zh: "新内容，待审批，暂不能导出。" }
+  zh_draft:     { en: "Chinese pending review", zh: "中文待审" }
+  stale:        { en: "Check before use", zh: "使用前请核对" }
+  stale_tip:    { en: "A fact on this slide is past its review date.", zh: "此页中有数据已过核对日期。" }
+  it:           { en: "IT", zh: "IT" }
+  pinned:       { en: "Always included", zh: "固定包含" }
+  drag:         { en: "Drag to reorder", zh: "拖动以调整顺序" }
+time:
+  target:       { en: "planned", zh: "计划" }
+  ok:           { en: "On time", zh: "时间合适" }
+  under:        { en: "Room to spare", zh: "时间宽裕" }
+  label:        { en: "Speaking time", zh: "讲解时长" }
+  of:           { en: "of", zh: "/" }
+  over:         { en: "Over the planned length", zh: "超出计划时长" }
+export:
+  pptx:         { en: "Download PowerPoint (.pptx)", zh: "下载 PowerPoint (.pptx)" }
+  html:         { en: "Download HTML", zh: "下载 HTML" }
+  present:      { en: "Present now", zh: "立即演示" }
+  link:         { en: "Copy builder link", zh: "复制生成链接" }
+  link_tip:     { en: "The link holds your selection, including the client name. It's never sent to a server, but whoever receives the link can see the name.", zh: "链接包含您的选择和客户名称。它不会发送到服务器，但收到链接的人可以看到客户名称。" }
+  copied:       { en: "Link copied", zh: "链接已复制" }
+  working:      { en: "Creating…", zh: "正在生成…" }
+  slide:        { en: "Slide", zh: "第" }
+recent:
+  title:        { en: "Recent decks (this browser only)", zh: "最近的演示文稿（仅限此浏览器）" }
+  empty:        { en: "Decks you export appear here.", zh: "导出的演示文稿会显示在这里。" }
+  open:         { en: "Open", zh: "打开" }
+  clear:        { en: "Clear", zh: "清除" }
+  stage_n:      { en: "Stage", zh: "阶段" }
+  restored:     { en: "Opened the shared selection", zh: "已打开共享的选择" }
+  bad_link:     { en: "That link couldn't be read; showing the default selection.", zh: "无法读取该链接，已显示默认选择。" }
+  forget:       { en: "Remove", zh: "删除" }

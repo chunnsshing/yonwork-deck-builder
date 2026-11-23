@@ -1,0 +1,39 @@
+id: box-vs-cloud-tradeoffs
+section: where
+title: AI Box vs cloud model — strengths and limits
+title_zh: 企业 AI 一体机与云端模型：优势与局限
+layout: compare-2-proscons
+audience: [biz, it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Same workflows, two engines
+  heading: Enterprise AI Box or cloud AI model?
+  left:
+    title: Enterprise AI Box
+    sub: '{{facts.product.box_hardware.value}} · {{facts.product.local_model.value}}'
+    pros: [Model processing stays on site, 'Fixed one-time cost, no per-use model charge', 'A model you control: open-weight, swappable for newer open models']
+    cons: [Upfront investment before the first workflow runs, '{{facts.product.box_concurrency.value}}', 'Smaller model: the largest cloud models are stronger at complex multi-step reasoning', 'Needs space, power and internet']
+  right:
+    title: Cloud AI model
+    sub: '{{facts.product.cloud_models.value}}'
+    pros: ['No upfront cost: pay for what you use', 'Strongest models available, kept up to date by the provider', Nothing to house on site; capacity not tied to one box]
+    cons: [Data sent to the model is processed by the provider, Cost grows with use, 'The provider sets model versions, retirement dates and prices']
+  suits: {left: 'Data that must stay on site; steady, heavy use', right: Lighter or uncertain usage; the hardest reasoning tasks}
+  footnote: Same YonWork platform and workflows in both. For costs, see the AI estimator.
+zh_status: draft
+zh:
+  eyebrow: 同样的工作流，两种引擎
+  heading: 企业 AI 一体机，还是云端 AI 模型？
+  left:
+    title: 企业 AI 一体机
+    sub: '{{facts.product.box_hardware.value}} · {{facts.product.local_model.value}}'
+    pros: [模型处理全部在本地完成, 一次性固定成本，没有按次计费, 模型由您掌控：开源权重，可换成更新的开源模型]
+    cons: [第一个工作流运行前需要先投入, '{{facts.product.box_concurrency.value}}', 模型较小：最大的云端模型在复杂多步推理上更强, 需要空间、电源和网络]
+  right:
+    title: 云端 AI 模型
+    sub: '{{facts.product.cloud_models.value}}'
+    pros: [无前期投入：用多少付多少, 可用最强的模型，由服务商持续更新, 无需在本地放置设备，算力不受单台设备限制]
+    cons: [发送给模型的数据由服务商处理, 用得越多，成本越高, 模型版本、下线时间和价格由服务商决定]
+  suits: {left: 必须留在本地的数据；稳定、高频的使用, right: 用量较小或不确定；最难的推理任务}
+  footnote: 两种方式使用同一个 YonWork 平台和工作流。费用请参见 AI 费用估算。

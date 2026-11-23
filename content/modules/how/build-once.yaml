@@ -1,0 +1,27 @@
+id: build-once
+section: how
+title: Build the foundation once, add workflows on top
+title_zh: 数据底座建一次，工作流叠加其上
+layout: foundation
+audience: [biz]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Why the data layer matters
+  heading: Build the foundation once, add workflows on top
+  workflows:
+  - {cap: First, title: Your first workflow, body: 'One task, proven on your data.', now: true}
+  - {cap: Later · example, title: Quoted vs actual, body: Compare each quote with the real cost. Feeds back into better quotes.}
+  - {cap: Later · example, title: Price alerts, body: Flag when purchase prices move away from what you last quoted.}
+  - {cap: Later · example, title: Ask your data, body: 'Staff ask questions in plain language, answered by role.'}
+  foundation: Data layer, built once · customers · items · prices · documents · history
+zh_status: draft
+zh:
+  eyebrow: 为什么数据层很重要
+  heading: 底座只建一次，工作流不断叠加
+  workflows:
+  - {cap: 第一个, title: 您的第一个工作流, body: 一项任务，在您的数据上验证。, now: true}
+  - {cap: 以后 · 示例, title: 报价与实际对比, body: 把每份报价和实际成本对比，反过来让报价更准。}
+  - {cap: 以后 · 示例, title: 价格预警, body: 采购价偏离上次报价时及时提示。}
+  - {cap: 以后 · 示例, title: 问您的数据, body: 员工用日常语言提问，按角色给出答案。}
+  foundation: 数据层，只建一次 · 客户 · 物料 · 价格 · 单据 · 历史

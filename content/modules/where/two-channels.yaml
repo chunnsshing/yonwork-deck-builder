@@ -1,0 +1,29 @@
+id: two-channels
+section: where
+title: Two channels, one set of rules (IT)
+title_zh: 两个通道，一套规则（IT）
+layout: table
+audience: [it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Choosing a channel
+  heading: Two channels, one set of rules
+  columns: ['', A · Cloud AI assistant, B · Local AI]
+  rows:
+  - [Where the AI runs, The provider's cloud, Your AI Box]
+  - [Where the data goes, What it reads is sent to the provider for processing, Stays in your office]
+  - [Best for, 'Deeper analysis, longer reports, tables and charts', Quick lookups when data must stay on site]
+  - [Access from, 'Anywhere: web, desktop, mobile', Office network]
+  - [Permissions, 'Identical: both go through the same role-based data API', Identical]
+zh_status: draft
+zh:
+  eyebrow: 选择通道
+  heading: 两个通道，一套规则
+  columns: ['', A · 云端 AI 助手, B · 本地 AI]
+  rows:
+  - [AI 在哪里运行, 服务商的云端, 您的一体机]
+  - [数据去向, 读取的内容会发送给服务商处理, 留在您的办公室]
+  - [适合, 深入分析、长报告、表格和图表, 数据必须留在本地时的快速查询]
+  - [访问方式, 随处可用：网页、桌面、手机, 办公网络]
+  - [权限, 完全相同：都经过同一个基于角色的数据接口, 完全相同]

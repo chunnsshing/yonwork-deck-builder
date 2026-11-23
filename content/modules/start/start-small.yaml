@@ -1,0 +1,29 @@
+id: start-small
+section: start
+title: Start small — five steps
+title_zh: 从小处开始：五个步骤
+layout: steps-5
+audience: [biz]
+minutes: 1.5
+origin: extracted
+slide:
+  eyebrow: What it takes to start
+  heading: No need to commit to everything. Start with one task.
+  steps:
+  - {title: Pick one task, body: 'Frequent, repetitive, easy to measure.', highlight: true}
+  - {title: Set expectations, body: 'Agree the target, the boundaries, and how we''ll know it worked.'}
+  - {title: Trial on real data, body: 'Your documents, your items, your ERP. Weeks, not months.'}
+  - {title: Make it official, body: 'Build it properly: a reusable process your whole team can use.'}
+  - {title: Grow from there, body: 'Run it, then add the next task. Each one is faster than the last.'}
+  band: {tag: Side by side, text: Our AI Enablement Team stays with your team the whole way. You bring the business knowledge; we bring the AI.}
+zh_status: draft
+zh:
+  eyebrow: 开始需要什么
+  heading: 无需一次全部投入，从一项任务开始。
+  steps:
+  - {title: 选一项任务, body: 频繁、重复、容易衡量。, highlight: true}
+  - {title: 明确预期, body: 约定目标、边界，以及如何判断成功。}
+  - {title: 用真实数据试点, body: 用您的文档、物料和 ERP。几周，而不是几个月。}
+  - {title: 正式上线, body: 正式构建：一个整个团队都能用的可复用流程。}
+  - {title: 逐步扩展, body: 运行起来后，再加下一项任务。每一项都比上一项更快。}
+  band: {tag: 并肩同行, text: 我们的 AI 赋能团队全程与您的团队同行。您提供业务知识，我们提供 AI。}

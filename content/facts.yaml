@@ -1,0 +1,67 @@
+# facts.yaml — every fact that can go stale lives here, and only here.
+# Modules reference these as {{facts.<path>}}. Module files may not hard-code a model name,
+# hardware name, third-party policy or statistic. There are NO prices in this repo: pricing
+# lives in the AI estimator only.
+#
+# Each fact: value (+ value_zh where it is shown on a slide), source, checked, review_by.
+# Past review_by the build warns and the builder shows "check before use" on affected modules.
+
+links:
+  scenarios_url: https://yonyou.com.sg/yonwork-cases/
+  estimator_url: https://chunnsshing.github.io/yonwork-estimator/#estimator
+
+product:
+  local_model:
+    value: "Qwen3.8-27B"
+    note: "Open-weight model on the Enterprise AI Box; changes as newer open models ship."
+    checked: 2026-11-23
+    review_by: 2027-01-31
+  box_hardware:
+    value: "NVIDIA GB10, 128 GB"
+    checked: 2026-11-23
+    review_by: 2027-02-28
+  box_concurrency:
+    value: "One box serves up to 5 people at the same time"
+    value_zh: "一台一体机最多同时服务 5 人"
+    checked: 2026-11-23
+    review_by: 2027-02-28
+  cloud_models:
+    value: "OpenAI or Claude"
+    value_zh: "OpenAI 或 Claude"
+    checked: 2026-11-23
+    review_by: 2027-02-28
+
+policy:
+  cloud_training:
+    value: "Not used for training by default, under both providers' business terms"
+    value_zh: "按两家服务商的企业条款，默认不用于训练"
+    source: OpenAI and Anthropic published business/API terms
+    checked: 2026-11-23
+    review_by: 2027-01-31
+  cloud_retention:
+    value: "Kept for a limited period for abuse monitoring (OpenAI API: up to 30 days). Zero retention available on approval."
+    value_zh: "为防滥用监测短期保留（OpenAI API：最长 30 天），经审批可零保留"
+    source: OpenAI API data controls page
+    checked: 2026-11-23
+    review_by: 2027-01-31
+  cloud_region:
+    value: "Both providers offer Singapore data storage for eligible accounts"
+    value_zh: "两家服务商均为符合条件的账户提供新加坡数据存储"
+    checked: 2026-11-23
+    review_by: 2027-01-31
+
+stats:
+  ai_adoption:
+    value: "88%"
+    label: "of companies use AI in at least one part of the business"
+    label_zh: "的企业已在至少一个业务环节使用 AI"
+    source: "McKinsey & QuantumBlack, The State of AI in 2025 (Nov 2025, ~2,000 respondents)"
+    checked: 2026-11-23
+    review_by: 2026-12-31   # replace when the 2026 edition is out
+  ai_high_performers:
+    value: "~6%"
+    label: "say AI adds 5% or more to their profit (EBIT)"
+    label_zh: "表示 AI 为其利润（EBIT）贡献 5% 以上"
+    source: "McKinsey & QuantumBlack, The State of AI in 2025 — 'AI high performers'"
+    checked: 2026-11-23
+    review_by: 2026-12-31

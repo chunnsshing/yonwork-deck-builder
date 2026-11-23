@@ -1,0 +1,35 @@
+id: private-data-layer
+section: where
+title: Private data layer architecture (IT)
+title_zh: 私有数据层架构（IT）
+layout: architecture
+audience: [it]
+minutes: 4
+origin: extracted
+slide:
+  eyebrow: Architecture
+  heading: One server in your office does the work
+  lede: Your ERP stays the system of record. The server copies, organises and guards the data, and every way of asking passes through the same gate.
+  components:
+  - {n: 1, title: Sync engine, body: 'Read-only ERP copy: changes each minute, master data less often, full check nightly. Alerts admin on failure.'}
+  - {n: 2, title: Ontology layer, body: 'Codes become names, documents are linked, one definition per metric, every answer time-stamped.'}
+  - {n: 3, title: Role-based data API, body: 'Every request checked: key → access by document type → read → answer + log. Default is deny.'}
+  - {n: 4, title: Admin portal, body: 'Your admin ticks which document types each role can read, and rotates or revokes keys. No code, no restart.'}
+  channels:
+  - {id: A, title: Cloud AI assistant, body: 'Deeper analysis, longer reports, charts. Reaches the server through an outbound encrypted tunnel.'}
+  - {id: B, title: Local AI on the box, body: Quick lookups where data must stay in the office. Office network only.}
+  footnote: 'If the server ever fails, nothing is lost: the ERP still holds everything, so recovery is a reinstall and re-sync.'
+zh_status: draft
+zh:
+  eyebrow: 架构
+  heading: 办公室里的一台服务器完成这些工作
+  lede: ERP 仍是业务记录系统。服务器负责复制、整理和守护数据，所有提问方式都经过同一道关口。
+  components:
+  - {n: 1, title: 同步引擎, body: ERP 只读副本：变更每分钟同步，主数据频率较低，每晚全面核对。失败时通知管理员。}
+  - {n: 2, title: 本体层, body: 代码变成名称，单据相互关联，每个指标一个定义，每个答案带时间戳。}
+  - {n: 3, title: 基于角色的数据接口, body: 每个请求都要检查：密钥 → 按单据类型授权 → 读取 → 回答并记录。默认拒绝。}
+  - {n: 4, title: 管理后台, body: 管理员勾选每个角色可读的单据类型，并轮换或吊销密钥。无需代码，无需重启。}
+  channels:
+  - {id: A, title: 云端 AI 助手, body: 更深入的分析、更长的报告和图表。通过出站加密隧道连接服务器。}
+  - {id: B, title: 一体机上的本地 AI, body: 适合数据必须留在办公室的快速查询。仅限办公网络。}
+  footnote: 即使服务器出现故障，也不会丢失数据：ERP 仍保存着一切，恢复只需重装并重新同步。

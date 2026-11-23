@@ -1,0 +1,37 @@
+id: synced-or-static
+section: start
+title: Is your data synced or static?
+title_zh: 您的数据是同步的还是静态的？
+layout: compare-2
+audience: [biz, it]
+minutes: 3
+origin: extracted
+slide:
+  eyebrow: The question that shapes the solution
+  heading: Is your data synced, or static?
+  left:
+    cap: SYNCED
+    title: Changes often, kept in another system
+    points: [Purchase prices, Transactions and documents, Actual hours or quantities]
+    note: 'Means: a connector keeps it up to date on a schedule.'
+  right:
+    cap: STATIC
+    title: Set once, updated now and then
+    points: [Rates and price lists, Overhead and margin rules, Templates and policies]
+    note: 'Means: your team maintains it in a settings screen.'
+  question: 'For each item: where is it kept, and how often does it change?'
+zh_status: draft
+zh:
+  eyebrow: 决定方案的关键问题
+  heading: 您的数据是同步的，还是静态的？
+  left:
+    cap: 同步数据
+    title: 经常变化，保存在其他系统中
+    points: [采购价格, 交易和单据, 实际工时或数量]
+    note: 意味着：由连接器定期保持更新。
+  right:
+    cap: 静态数据
+    title: 设定一次，偶尔更新
+    points: [费率和价目表, 管理费和毛利规则, 模板和政策]
+    note: 意味着：由您的团队在设置页面中维护。
+  question: 逐项确认：它保存在哪里，多久变化一次？

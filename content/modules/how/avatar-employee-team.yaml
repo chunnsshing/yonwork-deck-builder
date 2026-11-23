@@ -1,0 +1,25 @@
+id: avatar-employee-team
+section: how
+title: Digital avatar → employee → team
+title_zh: 数字分身 → 数字员工 → 数字团队
+layout: steps-3
+audience: [biz]
+minutes: 2.5
+origin: extracted
+slide:
+  eyebrow: How it grows
+  heading: From a digital avatar to a digital team
+  steps:
+  - {cap: 01 · DIGITAL AVATAR, title: Works as you, body: 'Uses your login and your permissions. You ask, it does the job, and you stay responsible.', example: '"Turn this chat message into a sales order."'}
+  - {cap: 02 · DIGITAL EMPLOYEE, title: Gets its own badge, body: 'Its own identity, permissions and job scope. Does the chores without being asked, around the clock.', example: Watches an inbox and prepares documents for approval.}
+  - {cap: 03 · DIGITAL TEAM, title: Works together, body: 'Several digital employees share a bigger job, all speaking one business language.', example: Quote → order → delivery → invoice → collection., future: true}
+  band: {tag: The same three questions, text: 'Who is it? What is it allowed to do? Who checks its work? (Same as hiring.)'}
+zh_status: draft
+zh:
+  eyebrow: 它如何成长
+  heading: 从数字分身到数字团队
+  steps:
+  - {cap: 01 · 数字分身, title: 以你的身份工作, body: 使用你的账号和权限。你提出要求，它来完成，责任仍在你。, example: “把这条聊天消息变成一张销售订单。”}
+  - {cap: 02 · 数字员工, title: 有了自己的工牌, body: 拥有自己的身份、权限和职责范围。无需吩咐，全天候处理日常事务。, example: 盯着一个邮箱，把单据准备好等待审批。}
+  - {cap: 03 · 数字团队, title: 协同作战, body: 多个数字员工分担更大的工作，说同一种业务语言。, example: 报价 → 订单 → 发货 → 开票 → 收款, future: true}
+  band: {tag: 同样三个问题, text: 它是谁？它能做什么？谁来检查它的工作？（和招聘一样。）}

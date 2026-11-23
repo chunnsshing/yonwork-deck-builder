@@ -1,0 +1,43 @@
+id: deployment-options
+section: where
+title: Local, hybrid or cloud
+title_zh: 本地、混合或云端
+layout: options-3
+audience: [biz, it]
+minutes: 4
+origin: extracted
+slide:
+  eyebrow: Where it runs
+  heading: Three options. Your data, your call.
+  options:
+  - title: Fully local
+    leaves: Nothing
+    pros: ['Strongest confidentiality, fits customer NDAs', No per-use model fees, Model processing stays on site]
+    cons: [Hardware to buy and house, 'Smaller local models may handle complex documents less well, so we test on your documents first']
+  - title: Hybrid
+    leaves: Only the document being read, or text taken from it
+    pros: [Strongest document reading, 'Your data, prices and rates stay local', Lighter hardware]
+    cons: [Documents go off-site; may need your customers' approval, Ongoing usage cost]
+  - title: Cloud
+    leaves: Documents and the business data the AI reads
+    pros: [Fastest to start, No hardware, 'Latest models, updated for you']
+    cons: [Least control over confidential data, Cost grows with use]
+  question: 'The deciding question: do your customer contracts allow your documents to leave your network?'
+zh_status: draft
+zh:
+  eyebrow: 部署在哪里
+  heading: 三种选择。您的数据，您来决定。
+  options:
+  - title: 本地部署
+    leaves: 无
+    pros: [保密性最强，符合客户保密协议, 没有按次计费的模型费用, 模型处理全部在本地完成]
+    cons: [需要购买并放置硬件, 本地小模型处理复杂文档可能稍弱，所以我们先用您的文档测试]
+  - title: 混合部署
+    leaves: 只有正在读取的文档，或从中提取的文字
+    pros: [文档读取能力最强, 您的数据、价格和费率留在本地, 硬件更轻]
+    cons: [文档会离开本地，可能需要您客户的同意, 持续的使用费用]
+  - title: 云端部署
+    leaves: 文档以及 AI 读取的业务数据
+    pros: [启动最快, 无需硬件, 最新模型，自动更新]
+    cons: [对机密数据的掌控最少, 用得越多，成本越高]
+  question: 关键问题：您与客户的合同，是否允许文档离开您的网络？

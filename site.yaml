@@ -1,0 +1,113 @@
+# site.yaml — the only source for brand tokens, sections, stage presets, the IT overlay,
+# optional fields and starter-pack links. See HANDOFF.md §4.
+
+version: 1
+
+brand:
+  name: "YonWork Deck Builder"
+  org: { en: "Yonyou Singapore", zh: "Yonyou Singapore" }
+  # Colour tokens shared with runtime/deck.css (CSS reads its own copy; the PPTX renderer reads these).
+  tokens:
+    ink: "#1C1C1E"
+    ink2: "#48484A"
+    muted: "#86868B"
+    line: "#E3E3E8"
+    bg: "#F4F4F6"
+    card: "#FFFFFF"
+    red: "#E3202C"
+    red_deep: "#B3121E"
+    grad_from: "#FF5B48"
+    grad_to: "#E3172A"
+    red_tint: "#FBE4E5"      # rgba(227,32,44,.09) on white
+    amber: "#D68A00"
+    teal: "#0B8F80"
+    blue: "#3D5AFE"
+    violet: "#A64AC9"
+    teal_tint: "#E1F3F0"     # rgba(20,170,150,.13) on white
+    teal_ink: "#0B6F63"
+    amber_tint: "#FBF0DC"
+    amber_ink: "#9A5A06"
+    hot: "#FFF1EF"           # highlighted card fill (PPTX has no gradient fills)
+    dark: "#1C1C1E"
+  fonts:
+    pptx_en: "Arial"
+    pptx_zh: "Microsoft YaHei"
+
+# Agenda rows, in fixed order. `frame` modules (cover, agenda, house rules, thank-you) never appear in the agenda.
+sections:
+  why:   { en: "Why AI, why now",         zh: "为什么是 AI，为什么是现在",
+           summary: { en: "Where most companies are, and what holds AI back", zh: "多数企业所处的阶段，以及 AI 的短板" } }
+  how:   { en: "How enterprise AI works", zh: "企业 AI 如何工作",
+           summary: { en: "What makes AI trustworthy enough for real work", zh: "是什么让 AI 值得托付真实业务" } }
+  where: { en: "Where it runs",           zh: "部署在哪里",
+           summary: { en: "Local, hybrid or cloud, and what leaves your network", zh: "本地、混合或云端，以及哪些数据会离开您的网络" } }
+  what:  { en: "What it looks like",      zh: "实际是什么样",
+           summary: { en: "The kinds of help AI gives day to day", zh: "AI 在日常工作中能提供的几类帮助" } }
+  start: { en: "How to start",            zh: "如何开始",
+           summary: { en: "What a first project needs, and how small it can be", zh: "第一个项目需要什么，可以从多小开始" } }
+
+stages:
+  1: { name: { en: "Exploring AI", zh: "初识 AI" },
+       blurb: { en: "Heard of AI, maybe tried ChatGPT. Show what it is and what it can do.", zh: "听说过 AI，也许用过 ChatGPT。讲清 AI 是什么、能做什么。" } }
+  2: { name: { en: "Using AI, new to enterprise AI", zh: "用过 AI，未接触企业级 AI" },
+       blurb: { en: "Uses AI tools. Show why business AI is different and how it's trusted.", zh: "已在使用 AI 工具。讲清企业级 AI 有何不同、为何可信。" } }
+  3: { name: { en: "Planning a project", zh: "准备落地" },
+       blurb: { en: "Ready to talk architecture, data and deployment.", zh: "准备讨论架构、数据与部署。" } }
+
+presets:
+  1:   # Exploring AI
+    length_min: 20
+    title:    { en: "AI at work, explained", zh: "一次讲清：AI 如何为企业工作" }
+    subtitle: { en: "What AI can do for your business, and how it stays under control", zh: "AI 能为企业做什么，又如何做到安全可控" }
+    main: [cover, agenda, house-rules, maturity-ladder, red-flags, three-patterns, ask-your-data,
+           approval-gates, trust-promises, self-check, start-small, thank-you]
+    appendix: [faq]
+  2:   # Using AI, new to enterprise AI
+    length_min: 30
+    title:    { en: "From AI tools to AI you can trust at work", zh: "从 AI 工具到值得信赖的企业 AI" }
+    subtitle: { en: "How enterprise AI works, and why it's different", zh: "企业级 AI 的工作原理与不同之处" }
+    main: [cover, agenda, maturity-ladder, red-flags, model-harness, avatar-employee-team, x-ai-to-ai-x,
+           ai-rules-people, trust-promises, approval-gates, data-layer, deployment-options,
+           three-patterns, self-check, start-small, thank-you]
+    appendix: [faq, box-vs-cloud-tradeoffs]
+  3:   # Planning a project
+    length_min: 25          # +15 when IT in the room is on (sum of the overlay modules)
+    title:    { en: "Enterprise AI: architecture and deployment", zh: "企业 AI：架构与部署" }
+    subtitle: { en: "How it's built, where it runs, and what a pilot needs", zh: "如何搭建、部署在哪里、试点需要什么" }
+    main: [cover, agenda, ai-rules-people, trust-promises, data-layer, build-once, deployment-options,
+           box-vs-cloud-tradeoffs, data-handling, synced-or-static, what-a-pilot-needs, start-small, thank-you]
+    appendix: [faq, model-harness]
+
+it_overlay:      # inserted into the Where section when "IT in the room" is on
+  1: []
+  2: [security-by-design]
+  3: [private-data-layer, two-channels, security-by-design]
+
+# Optional builder fields. Switch one on by setting enabled: true (HANDOFF §14 D1).
+fields:
+  client:      { enabled: true,  required: true, max: 60 }
+  presenter:   { enabled: false, label: { en: "Presenter name", zh: "主讲人" } }
+  contact:     { enabled: false, label: { en: "Presenter contact", zh: "联系方式" } }
+  client_logo: { enabled: false, label: { en: "Client logo", zh: "客户 Logo" } }
+  erp:         { enabled: false, label: { en: "Client ERP", zh: "客户 ERP" }, options: [YonSuite, YonBIP, NC Cloud] }
+  date:        { enabled: false, label: { en: "Meeting date", zh: "会议日期" } }
+
+# Starter-pack switcher in the top bar. URLs for the other two tools come from facts.links.
+starter_pack:
+  - { id: scenarios, label: { en: "Scenarios", zh: "场景库" },   url: "{{facts.links.scenarios_url}}" }
+  - { id: deck,      label: { en: "Deck builder", zh: "演示文稿" }, url: "./", current: true }
+  - { id: estimator, label: { en: "Estimator", zh: "费用估算" }, url: "{{facts.links.estimator_url}}" }
+
+# Small fixed labels drawn by layouts (not module content). Reviewed together with the modules.
+deck_labels:
+  leaves:       { en: "What leaves your network", zh: "离开您网络的数据" }
+  pros:         { en: "Strengths", zh: "优势" }
+  cons:         { en: "Trade-offs", zh: "需要权衡" }
+  limits:       { en: "Limits", zh: "局限" }
+  suits:        { en: "Best suited to", zh: "更适合" }
+  replay:       { en: "Replay", zh: "重播" }
+  appendix:     { en: "Appendix", zh: "附录" }
+  appendix_sub: { en: "Extra slides, if questions come up", zh: "补充材料，按需使用" }
+  lane_ai:      { en: "AI", zh: "AI" }          # principle-3 badges; the module's badge value picks the lane colour
+  lane_rules:   { en: "RULES", zh: "规则" }
+  lane_people:  { en: "PEOPLE", zh: "人" }

@@ -1,0 +1,21 @@
+id: thank-you
+section: frame
+title: Thank you + where to go next
+title_zh: 致谢与下一步
+layout: thanks
+audience: [biz, it]
+minutes: 1
+origin: extracted
+slide:
+  eyebrow: '{{client}} × Yonyou Singapore'
+  heading: Thank you
+  links:
+  - {label: See it working, sub: Scenario library, url: '{{facts.links.scenarios_url}}'}
+  - {label: What it would cost, sub: AI estimator, url: '{{facts.links.estimator_url}}'}
+zh_status: draft
+zh:
+  eyebrow: '{{client}} × Yonyou Singapore'
+  heading: 谢谢
+  links:
+  - {label: 看它实际运行, sub: 场景库, url: '{{facts.links.scenarios_url}}'}
+  - {label: 了解费用, sub: AI 费用估算, url: '{{facts.links.estimator_url}}'}

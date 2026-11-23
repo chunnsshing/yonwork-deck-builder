@@ -1,0 +1,19 @@
+id: self-check
+section: start
+title: How much of this sounds like you? (interactive)
+title_zh: 这些听起来像您吗？（互动）
+layout: self-check
+audience: [biz]
+minutes: 3
+origin: extracted
+slide:
+  eyebrow: Your turn
+  heading: How much of this sounds like you?
+  lines: [Your team retypes things from one place into another, 'People wait: for a reply, an approval, a report', 'Some things you only check sometimes, because checking everything takes too long', You wish a report was on your desk every morning]
+  banner: {threshold: 2, title: That is where we would start., body: The most repetitive task usually makes the best first project.}
+zh_status: draft
+zh:
+  eyebrow: 轮到您了
+  heading: 以下哪些听起来像您？
+  lines: [团队要把信息从一个地方重新录入到另一个地方, 大家在等待：等回复、等审批、等报告, 有些事只是偶尔检查，因为全部检查太费时间, 您希望每天早上桌上就有一份报告]
+  banner: {threshold: 2, title: 这就是我们的起点。, body: 最重复的任务，通常就是最好的第一个项目。}

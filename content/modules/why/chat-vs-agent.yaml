@@ -1,0 +1,31 @@
+id: chat-vs-agent
+section: why
+title: Chatbot vs agent
+title_zh: 聊天机器人与 AI 智能体
+layout: compare-2
+audience: [biz]
+minutes: 2
+origin: proposed
+slide:
+  eyebrow: Plain English
+  heading: A chatbot answers. An agent does the work.
+  left:
+    cap: CHATBOT
+    title: You ask, it replies
+    points: [Answers from what it was trained on, You copy the answer into your systems yourself, 'Doesn''t know your customers, items or prices']
+  right:
+    cap: AI AGENT
+    title: You ask, it does it
+    points: [Reads your documents and your ERP data, Prepares the draft in your system for you to check, Works within the permissions you give it]
+zh_status: draft
+zh:
+  eyebrow: 大白话
+  heading: 聊天机器人负责回答，AI 智能体负责做事。
+  left:
+    cap: 聊天机器人
+    title: 你问，它答
+    points: [根据训练内容回答, 答案要你自己复制到系统里, 不了解您的客户、物料和价格]
+  right:
+    cap: AI 智能体
+    title: 你提要求，它去完成
+    points: [读取您的文档和 ERP 数据, 在系统中准备好草稿，等您检查, 只在您授予的权限内工作]

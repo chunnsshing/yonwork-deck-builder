@@ -1,0 +1,23 @@
+id: ai-rules-people
+section: how
+title: AI suggests · Rules calculate · People decide
+title_zh: AI 建议 · 规则计算 · 人来决定
+layout: principle-3
+audience: [biz, it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: The design principle
+  heading: AI suggests. Rules calculate. Your team decides.
+  cols:
+  - {badge: AI, title: AI suggests, body: 'Reads documents, emails and chats. Finds similar past cases. Proposes values.'}
+  - {badge: RULES, title: Rules calculate, body: 'Your formulas, price lists and policies do the maths. Same inputs, same answer, every time.'}
+  - {badge: PEOPLE, title: People decide, body: 'Your team checks, adjusts and approves. Every number shows where it came from.'}
+zh_status: draft
+zh:
+  eyebrow: 设计原则
+  heading: AI 建议，规则计算，您的团队决定。
+  cols:
+  - {badge: AI, title: AI 建议, body: 读取文档、邮件和聊天，找出相似的历史案例，给出建议值。}
+  - {badge: RULES, title: 规则计算, body: 由您的公式、价目表和政策来计算。输入相同，结果永远相同。}
+  - {badge: PEOPLE, title: 人来决定, body: 您的团队检查、调整并批准。每个数字都能看到来源。}

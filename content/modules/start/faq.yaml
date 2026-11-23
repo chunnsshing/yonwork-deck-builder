@@ -1,0 +1,29 @@
+id: faq
+section: start
+title: Common questions
+title_zh: 常见问题
+layout: faq
+audience: [biz, it]
+minutes: 3
+origin: extracted
+slide:
+  eyebrow: Questions we often hear
+  heading: Good questions
+  items:
+  - {q: 'Is our data used to train the AI?', a: 'On the AI Box, the model runs on your premises. Cloud business terms don''t train on your data by default.'}
+  - {q: 'Which AI model does it use?', a: 'A local open model on the AI Box, or leading cloud models. The harness works the same with either.'}
+  - {q: 'What if it makes a mistake?', a: 'It keeps a complete record of what it did, and anything that changes your data waits for a person''s yes.'}
+  - {q: 'Will it replace my staff?', a: It takes the retyping and the chasing off their plate. People move to the work that needs judgement.}
+  - {q: 'Can it connect to our other apps?', a: 'Yes, through connectors. We confirm each one before a project starts.'}
+  - {q: 'How much does it cost?', a: It depends on the tasks and where the AI runs. The AI estimator shows how it's priced.}
+zh_status: draft
+zh:
+  eyebrow: 我们常听到的问题
+  heading: 好问题
+  items:
+  - {q: 我们的数据会被用来训练 AI 吗？, a: 使用一体机时，模型在您的场地运行。云端企业条款默认不使用您的数据训练。}
+  - {q: 用的是哪个 AI 模型？, a: 一体机上的本地开源模型，或领先的云端模型。无论用哪种，Harness 的工作方式都一样。}
+  - {q: 如果它出错了怎么办？, a: 它会完整记录所做的一切，任何修改数据的操作都要等人确认。}
+  - {q: 它会取代我的员工吗？, a: 它接手重复录入和催办，让员工转向需要判断力的工作。}
+  - {q: 能连接我们的其他应用吗？, a: 可以，通过连接器实现。每个连接在项目开始前都会先确认。}
+  - {q: 费用是多少？, a: 取决于任务和 AI 运行的位置。AI 费用估算工具会说明计费方式。}

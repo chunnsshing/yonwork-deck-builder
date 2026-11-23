@@ -1,0 +1,27 @@
+id: what-a-pilot-needs
+section: start
+title: What a pilot needs (sample data)
+title_zh: 试点需要什么（样本数据）
+layout: compare-2
+audience: [biz, it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Proving it on your data
+  heading: What a pilot needs from you
+  left:
+    cap: HELPFUL TO SHARE
+    points: ['10 to 20 past examples: the input, the result you sent, and the actual outcome if you have it', 'Your rate tables, price lists or rules', A copy of the data source files, An IT contact for the server and network]
+  right:
+    cap: WHAT WE LOOK AT
+    points: ['Reading: how reliably the fields can be extracted', 'Matching: how well past data supports the result', 'Rules: what needs syncing and what stays static', 'Fit: where the AI Box or a cloud model suits best']
+zh_status: draft
+zh:
+  eyebrow: 在您的数据上验证
+  heading: 试点需要您提供什么
+  left:
+    cap: 建议提供
+    points: [10 到 20 个过往示例：输入、您发出的结果，以及实际结果（如有）, 您的费率表、价目表或规则, 数据源文件的副本, 一位负责服务器和网络的 IT 联系人]
+  right:
+    cap: 我们会评估
+    points: [读取：字段能否可靠提取, 匹配：历史数据对结果的支持程度, 规则：哪些需要同步，哪些保持静态, 适配：一体机还是云端模型更合适]

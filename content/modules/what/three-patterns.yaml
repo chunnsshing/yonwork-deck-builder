@@ -1,0 +1,25 @@
+id: three-patterns
+section: what
+title: Three kinds of AI help
+title_zh: AI 的三种帮助
+layout: cards-3-numbered
+audience: [biz]
+minutes: 1.5
+origin: extracted
+slide:
+  eyebrow: What it looks like in practice
+  heading: Three kinds of help
+  cards:
+  - {n: 1, title: It asks first, what: A message or document → a draft in your system, body: You're in charge. It checks with you before anything is created., tag: Digital avatar}
+  - {n: 2, title: It does the chores, what: 'Incoming emails → documents, ready to approve', body: 'Nobody asks it to. You approve once, at the end.', tag: Digital employee}
+  - {n: 3, title: It looks out for you, what: A report on your desk every morning, body: 'Spots trouble ahead. Reads and reports only, so no approval is needed.', tag: Digital employee · proactive}
+  band: {tag: See them working, text: Real examples of each are in the scenario library.}
+zh_status: draft
+zh:
+  eyebrow: 实际是什么样
+  heading: 三种帮助
+  cards:
+  - {n: 1, title: 先问再做, what: 一条消息或一份文档 → 系统中的草稿, body: 由您掌控。创建任何内容前，它都会先和您确认。, tag: 数字分身}
+  - {n: 2, title: 包揽日常事务, what: 收到的邮件 → 待审批的单据, body: 无需吩咐。您只需在最后批准一次。, tag: 数字员工}
+  - {n: 3, title: 替您留意, what: 每天早上放在您桌上的报告, body: 提前发现问题。只读取和报告，无需审批。, tag: 数字员工 · 主动}
+  band: {tag: 看实际运行, text: 每种帮助的真实示例都在场景库中。}

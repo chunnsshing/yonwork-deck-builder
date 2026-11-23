@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; frame-src blob: data: about:; child-src blob: data: about:">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="YonWork Deck Builder: client-ready decks on how enterprise AI works.">
+<title>YonWork Deck Builder</title>
+<style>/*@APP_CSS*/</style>
+</head><body class="builder">
+<div class="wrap">
+<!--@TOPBAR-->
+
+  <main class="layout">
+    <section class="col">
+      <div class="card glass">
+        <div class="chead"><span class="badge">1</span><h2 data-t="steps.room"></h2></div>
+        <div class="stages" id="stages" role="radiogroup"></div>
+        <label class="switch"><input type="checkbox" id="it"><span class="knob" aria-hidden="true"></span>
+          <span><b data-t="stage.it"></b><small data-t="stage.it_hint"></small></span></label>
+      </div>
+
+      <div class="card glass">
+        <div class="chead"><span class="badge">2</span><h2><span data-t="steps.client"></span> <span class="req">*</span></h2></div>
+        <input id="client" maxlength="60" autocomplete="off" spellcheck="false" aria-required="true">
+        <p class="hint"><span class="lock" aria-hidden="true">🔒</span> <span data-t="client.privacy"></span></p>
+      </div>
+
+      <div class="card glass">
+        <div class="chead"><span class="badge">3</span><h2 data-t="steps.topics"></h2></div>
+        <div id="topics"></div>
+      </div>
+    </section>
+
+    <aside class="col side">
+      <div class="card glass">
+        <div class="chead"><span class="badge">4</span><h2 data-t="steps.export"></h2></div>
+        <div class="timebar" id="timebar"></div>
+        <div class="prevhead"><span id="pg" class="num"></span><span id="pgtitle"></span>
+          <button class="btn sm" id="prev" aria-label="Previous slide">←</button><button class="btn sm" id="next" aria-label="Next slide">→</button></div>
+        <div class="frame" id="frame"><iframe id="pv" title="Deck preview" sandbox="allow-scripts"></iframe></div>
+        <div class="btns">
+          <button class="btn primary" id="dl-pptx" disabled data-t="export.pptx"></button>
+          <button class="btn" id="dl-html" disabled data-t="export.html"></button>
+          <button class="btn" id="present" disabled data-t="export.present"></button>
+          <button class="btn" id="copy-link" data-t="export.link"></button>
+        </div>
+        <p class="hint warn" id="need" data-t="client.required"></p>
+      </div>
+      <div class="card glass recent">
+        <div class="chead"><h2 data-t="recent.title"></h2><button class="btn sm" id="recent-clear" data-t="recent.clear"></button></div>
+        <ul id="recent"></ul>
+      </div>
+    </aside>
+  </main>
+</div>
+<div id="thumb" class="thumb glass" aria-hidden="true"><iframe sandbox="allow-scripts" tabindex="-1" title=""></iframe></div>
+<div id="toast" class="toast glass" role="status"></div>
+<script>/*@KIT*/</script>
+<script>/*@SHARE_JS*/</script>
+<script>/*@APP_JS*/</script>
+</body></html>

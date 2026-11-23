@@ -1,0 +1,29 @@
+id: security-by-design
+section: where
+title: Security by design — six measures (IT)
+title_zh: 安全设计：六项措施（IT）
+layout: cards-6
+audience: [it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Security
+  heading: Security by design
+  cards:
+  - {title: Read-only ERP access, body: The server's ERP key can only read. Nothing in the ERP can be changed by it.}
+  - {title: No open ports, body: 'Cloud access comes through an outbound encrypted tunnel, limited to the provider''s published addresses.'}
+  - {title: Keys protected, body: 'Secrets stored hashed, tokens expire, any key can be revoked instantly.'}
+  - {title: Deny by default, body: A role sees only the document types the admin has granted.}
+  - {title: Full audit trail, body: 'Every call is logged with role, document type and time.'}
+  - {title: Admin portal stays inside, body: 'Reachable from the office network only, with its own admin login.'}
+zh_status: draft
+zh:
+  eyebrow: 安全
+  heading: 安全，从设计开始
+  cards:
+  - {title: ERP 只读访问, body: 服务器的 ERP 密钥只能读取，无法修改 ERP 中的任何内容。}
+  - {title: 不开放端口, body: 云端访问通过出站加密隧道，并仅限服务商公布的地址。}
+  - {title: 密钥受保护, body: 密钥哈希存储，令牌会过期，任何密钥都可立即吊销。}
+  - {title: 默认拒绝, body: 每个角色只能看到管理员授权的单据类型。}
+  - {title: 完整审计记录, body: 每次调用都记录角色、单据类型和时间。}
+  - {title: 管理后台留在内网, body: 只能从办公网络访问，并有独立的管理员登录。}

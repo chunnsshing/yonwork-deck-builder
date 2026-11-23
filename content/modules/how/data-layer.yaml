@@ -1,0 +1,29 @@
+id: data-layer
+section: how
+title: Nothing is magic — the data layer
+title_zh: 没有魔法：数据层
+layout: cards-4-steps
+audience: [biz, it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: How it understands your business
+  heading: Nothing is magic. The data layer comes first.
+  lede: AI is only as good as the business meaning it can read.
+  cards:
+  - {n: '01', title: Raw data, body: 'Files, tables, codes and columns that only the system understands.'}
+  - {n: '02', title: Business objects, body: 'Customer, item, order, invoice. Linked the way your team talks about them.'}
+  - {n: '03', title: Access rules, body: 'Who can see what, by role. Costs and margins stay with the people who should see them.'}
+  - {n: '04', title: AI workflows, body: The first workflow reads these objects. So does every one after it., highlight: true}
+  chips: [Codes become names, Documents are linked, One definition per metric, Every answer is time-stamped]
+zh_status: draft
+zh:
+  eyebrow: 它如何理解您的业务
+  heading: 没有魔法，数据层先行。
+  lede: AI 的水平，取决于它能读懂多少业务含义。
+  cards:
+  - {n: '01', title: 原始数据, body: 文件、表格、代码和字段，只有系统自己看得懂。}
+  - {n: '02', title: 业务对象, body: 客户、物料、订单、发票，按团队日常的说法关联起来。}
+  - {n: '03', title: 访问规则, body: 按角色决定谁能看什么，成本和毛利只给该看的人。}
+  - {n: '04', title: AI 工作流, body: 第一个工作流读取这些对象，之后的每一个也是。, highlight: true}
+  chips: [代码变成名称, 单据相互关联, 每个指标只有一个定义, 每个答案都带时间戳]

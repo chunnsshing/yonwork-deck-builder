@@ -1,0 +1,27 @@
+id: glossary
+section: why
+title: Five words in plain English
+title_zh: 五个词的大白话
+layout: cards-5
+audience: [biz]
+minutes: 2
+origin: proposed
+slide:
+  eyebrow: Five words you'll hear today
+  heading: In plain English
+  cards:
+  - {title: Model, body: The engine that reads and writes. Every company can use the same ones.}
+  - {title: Agent, body: 'A model with tools and rules, so it can do work in your systems.'}
+  - {title: Workflow, body: 'One repeatable job the agent does, start to finish.'}
+  - {title: Local vs cloud, body: 'Where the model runs: on a box in your office, or with a provider.'}
+  - {title: Data layer, body: 'Your business data, organised so AI reads it correctly.'}
+zh_status: draft
+zh:
+  eyebrow: 今天会听到的五个词
+  heading: 用大白话说
+  cards:
+  - {title: 模型, body: 负责读和写的引擎，每家公司都能用同样的模型。}
+  - {title: AI 智能体, body: 带有工具和规则的模型，能在您的系统里做事。}
+  - {title: 工作流, body: 智能体从头到尾完成的一项可重复的工作。}
+  - {title: 本地还是云端, body: 模型在哪里运行：办公室里的设备，或服务商的云端。}
+  - {title: 数据层, body: 整理好的业务数据，让 AI 读得准确。}

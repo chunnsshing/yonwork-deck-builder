@@ -1,0 +1,23 @@
+id: trust-promises
+section: how
+title: Three promises on every workflow
+title_zh: 每个工作流的三个承诺
+layout: cards-3
+audience: [biz, it]
+minutes: 1.5
+origin: extracted
+slide:
+  eyebrow: On every workflow
+  heading: Three promises, every time
+  cards:
+  - {title: No snooping, body: It only sees what the user is allowed to see.}
+  - {title: Nothing changes without your yes, body: 'Anything that creates, changes or sends waits for a person to approve.'}
+  - {title: It keeps the receipts, body: 'Every step is recorded: what it read, what it did, who approved.'}
+zh_status: draft
+zh:
+  eyebrow: 在每个工作流上
+  heading: 三个承诺，每次都兑现
+  cards:
+  - {title: 不越权查看, body: 它只能看到该用户有权看到的内容。}
+  - {title: 没有您的确认，什么都不会改, body: 任何新建、修改或发送操作，都要等人批准。}
+  - {title: 保留每一份记录, body: 每一步都有记录：读了什么、做了什么、谁批准的。}

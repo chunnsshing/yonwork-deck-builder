@@ -1,0 +1,31 @@
+id: model-harness
+section: how
+title: Agent = Model + Harness
+title_zh: Agent = Model + Harness
+layout: engine-4
+audience: [biz, it]
+minutes: 3
+origin: extracted
+slide:
+  eyebrow: What makes it trustworthy
+  heading: Agent = Model + Harness
+  lede: A first impression is easy. Trust has to be built.
+  engine: {cap: THE ENGINE · THE AI MODEL, title: 'Powerful, and it improves every few months.', body: 'Alone, it drifts and guesses. Every company can use the same models, so the model is not the difference.', kicker: The harness is. →}
+  cards:
+  - {icon: 🎯, title: Listens & remembers, body: 'Sticks to the goal you set, across every step of a long task.', fix: 'fixes: forgets what you said'}
+  - {icon: 🛑, title: Respects boundaries, body: Clear limits. Anything outside them is stopped before it happens., fix: 'fixes: making things up'}
+  - {icon: 🔍, title: No secrets, body: Every step and every decision is visible and recorded., fix: 'fixes: won''t explain itself'}
+  - {icon: 🏠, title: Follows house rules, body: 'Your process, your real data, and it checks with you where it matters.', fix: 'fixes: a different story every time'}
+  strip: [Prompt engineering · how to ask it, Context engineering · what to tell it about your business, 'Harness engineering · how to manage it, so it can be trusted with real work']
+zh_status: draft
+zh:
+  eyebrow: 是什么让它值得信赖
+  heading: Agent = Model + Harness
+  lede: 第一印象很容易，信任需要建立。
+  engine: {cap: 引擎 · AI 模型, title: 很强大，而且每隔几个月就会进步。, body: 单独使用时会跑偏、会猜测。每家公司都能用同样的模型，所以模型不是差别所在。, kicker: 差别在 Harness。→}
+  cards:
+  - {icon: 🎯, title: 听得进、记得住, body: 在长任务的每一步都紧扣您设定的目标。, fix: 解决：忘了你说过什么}
+  - {icon: 🛑, title: 守住边界, body: 界限清晰，越界的操作在发生前就被拦下。, fix: 解决：凭空编造}
+  - {icon: 🔍, title: 没有秘密, body: 每一步、每个决定都可见、有记录。, fix: 解决：不肯解释}
+  - {icon: 🏠, title: 遵守规矩, body: 按您的流程、用真实数据，关键处先和您确认。, fix: 解决：每次说法都不同}
+  strip: [Prompt engineering · 怎么问, Context engineering · 告诉它哪些业务背景, Harness engineering · 怎么管好它，让它能担当真实工作]

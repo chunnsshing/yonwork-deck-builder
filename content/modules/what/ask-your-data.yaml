@@ -1,0 +1,19 @@
+id: ask-your-data
+section: what
+title: Ask your ERP in plain language
+title_zh: 用日常语言问您的 ERP
+layout: questions
+audience: [biz]
+minutes: 1.5
+origin: extracted
+slide:
+  eyebrow: Ask your data
+  heading: Ask your ERP questions in plain language
+  questions: ['Which customers bought less this quarter than last?', 'What''s still on order from this supplier, and when is it due?', 'Which items haven''t moved in 90 days?', 'Which invoices are more than 60 days overdue?']
+  band: {tag: By role, text: Each person only gets answers from the data their role allows.}
+zh_status: draft
+zh:
+  eyebrow: 问您的数据
+  heading: 用日常语言向 ERP 提问
+  questions: [哪些客户本季度的采购比上季度少？, 这家供应商还有哪些订单未交货，什么时候到？, 哪些物料 90 天没有动过？, 哪些发票逾期超过 60 天？]
+  band: {tag: 按角色, text: 每个人只能得到其角色允许范围内的数据答案。}

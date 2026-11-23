@@ -1,0 +1,39 @@
+id: x-ai-to-ai-x
+section: how
+title: From X + AI to AI + X
+title_zh: 从 X + AI 到 AI + X
+layout: hub-compare
+audience: [biz, it]
+minutes: 1.5
+origin: extracted
+slide:
+  eyebrow: The bigger picture
+  heading: From X + AI to AI + X
+  lede: From software at the centre with AI bolted on, to AI at the centre, connected to all your software.
+  left:
+    eq: X + AI
+    cap: SOFTWARE AT THE CENTRE
+    apps: [Accounting, CRM, Email, Chat apps, Excel, HR]
+    points: ['Every app gets its own AI, and each one only knows its own corner.', 'They never talk to each other, so you retell your story in every app.', 'Six logins, six sets of permissions, six audit trails.']
+  right:
+    eq: AI + X
+    cap: AI AT THE CENTRE
+    core: YonWork
+    nodes: [Your ERP, Email, WhatsApp / WeChat, Excel & files, The web, Other apps]
+    points: [One AI that works across your software and knows your whole business., You ask once; it does the work wherever the work lives., 'One identity, one set of permissions, one audit trail.']
+zh_status: draft
+zh:
+  eyebrow: 更大的图景
+  heading: 从 X + AI 到 AI + X
+  lede: 从以软件为中心、外挂 AI，到以 AI 为中心、连接您所有的软件。
+  left:
+    eq: X + AI
+    cap: 以软件为中心
+    apps: [财务, CRM, 邮件, 聊天工具, Excel, 人事]
+    points: [每个应用都有自己的 AI，各自只了解自己那一块。, 它们互不相通，同一件事要在每个应用里重讲一遍。, 六个登录、六套权限、六份审计记录。]
+  right:
+    eq: AI + X
+    cap: 以 AI 为中心
+    core: YonWork
+    nodes: [您的 ERP, 邮件, WhatsApp / 微信, Excel 与文件, 互联网, 其他应用]
+    points: [一个 AI 跨越您的所有软件，了解整个业务。, 您只需说一次，它在工作所在之处完成工作。, 一个身份、一套权限、一份审计记录。]

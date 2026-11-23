@@ -1,0 +1,10 @@
+raw/
+dist/
+shots/
+__pycache__/
+.DS_Store
+node_modules/
+.claude/settings.local.json
+.venv/
+.claude/
+_site/

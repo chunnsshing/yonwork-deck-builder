@@ -1,0 +1,11 @@
+id: agenda
+section: frame
+title: Agenda (auto)
+title_zh: 议程（自动）
+layout: agenda
+audience: [biz, it]
+minutes: 1
+origin: extracted
+slide: {eyebrow: Today, heading: Agenda, auto: true}
+zh_status: draft
+zh: {eyebrow: 今天, heading: 议程, auto: true}

@@ -1,0 +1,33 @@
+id: data-handling
+section: where
+title: Where your data goes (box vs cloud table)
+title_zh: 您的数据去向（一体机与云端对比表）
+layout: table
+audience: [biz, it]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Data security
+  heading: Where your data goes in each option
+  columns: ['', Enterprise AI Box, Cloud AI model]
+  rows:
+  - [Where the AI model processes data, Your premises, The provider's cloud]
+  - [Workflow orchestration and run logs, YonWork platform, YonWork platform]
+  - [Used to train AI models, 'No, the model runs locally', '{{facts.policy.cloud_training.value}}']
+  - [Kept by the model provider, No outside model provider, '{{facts.policy.cloud_retention.value}}']
+  - [Where data is stored, Your premises, '{{facts.policy.cloud_region.value}}']
+  - [Internet needed, 'Yes, for the YonWork platform', 'Yes']
+  footnote: Cloud terms from the providers' published policies (checked {{facts.policy.cloud_training.checked}}). Exact retention and storage location depend on the account set-up.
+zh_status: draft
+zh:
+  eyebrow: 数据安全
+  heading: 每种方式下，您的数据去了哪里
+  columns: ['', 企业 AI 一体机, 云端 AI 模型]
+  rows:
+  - [AI 模型在哪里处理数据, 您的场地, 服务商的云端]
+  - [工作流编排与运行日志, YonWork 平台, YonWork 平台]
+  - [是否用于训练 AI 模型, 否，模型在本地运行, '{{facts.policy.cloud_training.value}}']
+  - [模型服务商是否保留, 没有外部模型服务商, '{{facts.policy.cloud_retention.value}}']
+  - [数据存储在哪里, 您的场地, '{{facts.policy.cloud_region.value}}']
+  - [是否需要联网, 需要，用于 YonWork 平台, 需要]
+  footnote: 云端条款来自服务商公开的政策（核对日期 {{facts.policy.cloud_training.checked}}）。具体保留期和存储位置取决于账户设置。

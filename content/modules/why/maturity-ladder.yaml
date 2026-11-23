@@ -1,0 +1,33 @@
+id: maturity-ladder
+section: why
+title: Almost everyone has met AI (maturity ladder)
+title_zh: 几乎人人都接触过 AI（成熟度阶梯）
+layout: stats-ladder
+audience: [biz]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Where are we today?
+  heading: Almost everyone has met AI. Very few work with it every day.
+  stats:
+  - {value: '{{facts.stats.ai_adoption.value}}', label: '{{facts.stats.ai_adoption.label}}', tone: muted}
+  - {value: '{{facts.stats.ai_high_performers.value}}', label: '{{facts.stats.ai_high_performers.label}}', tone: accent}
+  levels:
+  - {tag: LEVEL 1, title: Trying it out, body: Staff chat with an AI assistant on their own. No company project., who: MOST COMPANIES}
+  - {tag: LEVEL 2, title: A plan, body: 'The idea is there, but the plan never reaches daily work.', who: SOME}
+  - {tag: LEVEL 3, title: In production, body: AI lives inside daily processes. Staff rely on it every day., who: FEW}
+  - {tag: LEVEL 4, title: AI-native, body: AI is simply how the business runs. Nobody calls it an 'AI project' any more., who: VERY FEW}
+  source: 'Source: {{facts.stats.ai_adoption.source}}. Levels adapted from Yonyou''s enterprise AI maturity model.'
+zh_status: draft
+zh:
+  eyebrow: 我们现在在哪里？
+  heading: 几乎人人都接触过 AI，但很少有人每天用它工作。
+  stats:
+  - {value: '{{facts.stats.ai_adoption.value}}', label: '{{facts.stats.ai_adoption.label}}', tone: muted}
+  - {value: '{{facts.stats.ai_high_performers.value}}', label: '{{facts.stats.ai_high_performers.label}}', tone: accent}
+  levels:
+  - {tag: 第 1 级, title: 自己试用, body: 员工各自和 AI 助手聊天，没有公司层面的项目。, who: 多数企业}
+  - {tag: 第 2 级, title: 有了计划, body: 想法已经有了，但计划始终没有落到日常工作中。, who: 部分企业}
+  - {tag: 第 3 级, title: 投入生产, body: AI 融入日常流程，员工每天都依赖它。, who: 少数企业}
+  - {tag: 第 4 级, title: AI 原生, body: AI 就是企业运转的方式，没人再把它叫作“AI 项目”。, who: 极少数}
+  source: 来源：{{facts.stats.ai_adoption.source}}。等级参考 Yonyou 企业 AI 成熟度模型。

@@ -1,0 +1,23 @@
+id: approval-gates
+section: how
+title: It asks before it acts (yes-gates)
+title_zh: 先问再做（人工确认关卡）
+layout: gates-anim
+audience: [biz]
+minutes: 1
+origin: extracted
+slide:
+  eyebrow: The golden rule
+  heading: It asks before it acts.
+  lede: Everything in between, it does on its own.
+  steps: [Reads the request, Finds it all in your ERP, Creates the draft document, Done]
+  gates: ['Are these details right?', 'May I create it?', 'May I send it?']
+  band: {tag: If you say no, text: 'It goes back and tries again, and nothing has been created in your system.'}
+zh_status: draft
+zh:
+  eyebrow: 黄金法则
+  heading: 先问，再做。
+  lede: 中间的事情，它自己完成。
+  steps: [读取需求, 在 ERP 中找齐信息, 生成单据草稿, 完成]
+  gates: [这些信息对吗？, 可以创建吗？, 可以发送吗？]
+  band: {tag: 如果您说不, text: 它会退回重试，您的系统里什么都不会被创建。}

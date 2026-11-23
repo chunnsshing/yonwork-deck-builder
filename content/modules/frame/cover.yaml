@@ -1,0 +1,11 @@
+id: cover
+section: frame
+title: Cover
+title_zh: 封面
+layout: cover
+audience: [biz, it]
+minutes: 0.5
+origin: extracted
+slide: {eyebrow: '{{client}} × Yonyou Singapore', heading: '{{preset.title}}', lede: '{{preset.subtitle}}', date: auto}
+zh_status: draft
+zh: {eyebrow: '{{client}} × Yonyou Singapore', heading: '{{preset.title}}', lede: '{{preset.subtitle}}', date: auto}

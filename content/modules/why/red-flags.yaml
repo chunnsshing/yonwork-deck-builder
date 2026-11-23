@@ -1,0 +1,29 @@
+id: red-flags
+section: why
+title: AI on its own has red flags
+title_zh: 单靠 AI 存在隐患
+layout: cards-5
+audience: [biz]
+minutes: 2
+origin: extracted
+slide:
+  eyebrow: Why so few reach level 3
+  heading: AI is capable. But on its own, it has a few red flags.
+  cards:
+  - {icon: 🚩, title: Forgets what you said, body: 'You set a goal at the start. Twenty steps later, it has drifted.', tag: INTENT DRIFT}
+  - {icon: 🚩, title: Half-listening, body: 'In a long document, the middle goes in one ear and out the other.', tag: LOST IN THE MIDDLE}
+  - {icon: 🚩, title: Short memory, body: It only holds so much. Your business rules are the first thing to fall out., tag: CONTEXT LIMIT}
+  - {icon: 🚩, title: A different story every time, body: 'Ask the same question twice, get two different answers.', tag: PROBABILISTIC}
+  - {icon: 🚩, title: Won't explain itself, body: 'Ask why, and you get a confident paragraph that says nothing.', tag: BLACK BOX}
+  band: {tag: In business, text: 'Fine for drafting an email. But would you hand it your accounts? One cent can''t be wrong.'}
+zh_status: draft
+zh:
+  eyebrow: 为什么很少有企业达到第 3 级
+  heading: AI 很能干，但单独使用时，有几处隐患。
+  cards:
+  - {icon: 🚩, title: 忘了你说过什么, body: 开头定下的目标，二十步之后就跑偏了。, tag: 意图漂移}
+  - {icon: 🚩, title: 心不在焉, body: 长文档读到中间，就左耳进右耳出。, tag: 迷失在中间}
+  - {icon: 🚩, title: 记性短, body: 能记住的内容有限，业务规则最先被忘掉。, tag: 上下文上限}
+  - {icon: 🚩, title: 每次说法都不同, body: 同一个问题问两次，得到两个不同答案。, tag: 概率性输出}
+  - {icon: 🚩, title: 不肯解释, body: 问它为什么，只得到一段自信却空洞的话。, tag: 黑箱}
+  band: {tag: 放在业务中, text: 起草邮件没问题。但您敢把账目交给它吗？一分钱都不能错。}
