@@ -386,6 +386,11 @@ renderer reads the same tokens from `site.yaml`. Light backgrounds on every slid
 - Harness, Prompt engineering, Context engineering and Harness engineering stay in English in the Chinese deck.
 - Cover titles (§4) and the extra-field defaults (D1) are accepted as drafted for v1.
 
+**Decided by the owner (23 Nov 2026, after v1 went live):**
+- The house-rules ("No jargon") slide is removed.
+- `chat-vs-agent` and `glossary` are approved (D4) and part of the stage 1 preset.
+- The HTML deck fills the browser window (content column stays 1280 × 800-proportioned; backgrounds extend).
+
 **Still open (defaults used until answered):**
 
 | # | Question | Default |

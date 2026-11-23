@@ -33,7 +33,7 @@
     state.order = {};
     ['frame'].concat(SECS).forEach(function(sec){
       var ids = C.order.filter(function(id){ return M[id].section === sec; });
-      if (sec === 'frame') { state.order.frame = ['cover', 'agenda', 'house-rules', 'thank-you'].filter(function(id){ return M[id]; }); return; }
+      if (sec === 'frame') { state.order.frame = ['cover', 'agenda', 'thank-you'].filter(function(id){ return M[id]; }); return; }
       state.order[sec] = pref.filter(function(id){ return ids.indexOf(id) >= 0; }).concat(ids.filter(function(id){ return pref.indexOf(id) < 0; }));
     });
     state.dirty = false; state.slide = 0;
@@ -48,7 +48,6 @@
   /* ───────── selection → deck config ───────── */
   function selection(){
     var main = [], appendix = [];
-    if (state.on['house-rules']) main.push('house-rules');
     SECS.forEach(function(sec){
       state.order[sec].forEach(function(id){
         if (!state.on[id] || M[id].origin === 'proposed') return;

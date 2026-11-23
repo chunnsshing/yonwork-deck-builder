@@ -24,7 +24,7 @@ cover title, the topics and the planned length.
 
 **3 · Topics.** Untick what you don't need, drag to reorder within a section, or *Move to appendix* to keep a slide
 for questions. The time bar turns amber when you're over the planned time by 10%, and red at 25%.
-Badges: **IT** (for IT audiences) · **Draft** (not approved yet, can't be exported) · **中文待审** (Chinese not reviewed yet)
+Badges: **IT** (for IT audiences) · **中文待审** (Chinese not reviewed yet)
 · **Check before use** (a fact on the slide is past its review date). Hover a row to see the slide.
 
 ![Topic checklist](docs/img/2-topics.png)
@@ -40,7 +40,7 @@ Badges: **IT** (for IT audiences) · **Draft** (not approved yet, can't be expor
 
 ![Preview, export and recent decks](docs/img/3-preview-export.png)
 
-**Presenting the HTML deck:** `←` `→` / Space to move · `O` overview (the appendix is at the end) · `L` English ⇄ 中文 ·
+**Presenting the HTML deck:** it fills the browser window at any size. `←` `→` / Space to move · `O` overview (the appendix is at the end) · `L` English ⇄ 中文 ·
 `F` full screen · `H` hide the progress bar · `Esc` close. Clicking a self-check row or *Replay* doesn't change slides.
 
 ![A slide](docs/img/4-deck-slide.png)

@@ -39,11 +39,12 @@
     cur = t; render();
   }
 
-  /* fixed 1280x800 stage, scaled + letterboxed */
+  /* full window: scale by the 1280×800 design size, then stretch the stage to the window's shape (no letterbox) */
   function fit(){
     var s = Math.min(innerWidth / 1280, innerHeight / 800);
-    var x = (innerWidth - 1280 * s) / 2, y = (innerHeight - 800 * s) / 2;
-    stage.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')';
+    stage.style.width = (innerWidth / s) + 'px';
+    stage.style.height = (innerHeight / s) + 'px';
+    stage.style.transform = 'scale(' + s + ')';
   }
 
   /* overview (O) */

@@ -59,7 +59,7 @@ presets:
     length_min: 20
     title:    { en: "AI at work, explained", zh: "一次讲清：AI 如何为企业工作" }
     subtitle: { en: "What AI can do for your business, and how it stays under control", zh: "AI 能为企业做什么，又如何做到安全可控" }
-    main: [cover, agenda, house-rules, maturity-ladder, red-flags, three-patterns, ask-your-data,
+    main: [cover, agenda, maturity-ladder, red-flags, chat-vs-agent, glossary, three-patterns, ask-your-data,
            approval-gates, trust-promises, self-check, start-small, thank-you]
     appendix: [faq]
   2:   # Using AI, new to enterprise AI

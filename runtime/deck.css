@@ -22,13 +22,15 @@
 .yw-deck *{box-sizing:border-box;margin:0;padding:0}
 html.yw-deck,html.yw-deck body{height:100%;overflow:hidden;background:#E9E9EE;-webkit-font-smoothing:antialiased}
 #fit{position:fixed;inset:0;overflow:hidden}
+/* The stage fills the window: deck.js scales by the 1280×800 design size and stretches the stage to the window's
+   shape; the content column stays 1112 px wide (centred), backgrounds and footer run edge to edge. */
 #stage{position:absolute;top:0;left:0;width:1280px;height:800px;transform-origin:top left;overflow:hidden;
-  box-shadow:0 30px 80px -30px rgba(20,20,40,.35);font-family:var(--font);color:var(--ink)}
+  font-family:var(--font);color:var(--ink);--gut:max(84px, calc((100% - 1112px) / 2))}
 .deck{position:absolute;inset:0;display:none}
 .deck.on{display:block}
 .deck[lang="zh"]{font-family:var(--font-zh)}
 
-.slide{position:absolute;inset:0;overflow:hidden;padding:60px 84px 92px;display:flex;flex-direction:column;justify-content:center;
+.slide{position:absolute;inset:0;overflow:hidden;padding:60px var(--gut) 92px;display:flex;flex-direction:column;justify-content:center;
   background:
     radial-gradient(560px 460px at -4% -10%,rgba(255,110,90,.16),transparent 64%),
     radial-gradient(520px 420px at 104% -4%,rgba(255,185,165,.20),transparent 64%),
@@ -75,7 +77,7 @@ h2.head{font-size:48px;line-height:1.1;letter-spacing:-.026em;font-weight:730;ma
 .band span.t{font-size:18px;line-height:1.45;color:var(--ink);font-weight:560}
 
 /* ───────────── footer ───────────── */
-.foot{position:absolute;left:84px;right:84px;bottom:30px;display:flex;align-items:center;gap:16px;text-align:left;
+.foot{position:absolute;left:var(--gut);right:var(--gut);bottom:30px;display:flex;align-items:center;gap:16px;text-align:left;
   font-size:13px;color:var(--muted);letter-spacing:.02em;z-index:3}
 .foot .who{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
 .foot .apx{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--violet)}
@@ -159,7 +161,7 @@ body.clean .foot .pg,body.clean #bar{display:none}
   @page{size:A4 landscape;margin:0}
   html.yw-deck,html.yw-deck body{height:auto;overflow:visible;background:#fff}
   #fit{position:static}
-  #stage{position:static;transform:none!important;width:1280px;height:auto;box-shadow:none;zoom:.875}
+  #stage{position:static;transform:none!important;width:1280px!important;height:auto!important;box-shadow:none;zoom:.875}
   .deck{position:static}
   .deck:not(.on){display:none!important}
   .slide{position:relative;inset:auto;width:1280px;height:800px;opacity:1!important;transform:none!important;visibility:visible!important;

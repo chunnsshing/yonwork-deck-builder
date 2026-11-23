@@ -80,8 +80,8 @@ def main():
         s = st()
         check("drag reorders within a section", s["sel"]["main"].index("red-flags") < s["sel"]["main"].index("maturity-ladder"), json.dumps(s["sel"]["main"][:3]))
 
-        # proposed modules can't be ticked
-        check("proposed module checkbox disabled", page.is_disabled('.row[data-id="chat-vs-agent"] input'))
+        # no module is left as a draft
+        check("no Draft badges", page.locator(".tg.draft").count() == 0)
 
         # switching stage after changes asks first
         page.once("dialog", lambda d: d.dismiss())
@@ -182,8 +182,6 @@ def main():
         page.click('.stage[data-s="1"]')
         page.wait_for_timeout(200)
         page.click('.row[data-id="faq"] .apx')            # faq back to main
-        page.click('.sec[data-sec="frame"] > summary')
-        page.click('.row[data-id="house-rules"] input')    # untick house rules
         page.fill("#client", "Acme Trading")
         page.click('#lang button[data-l="zh"]')
         page.wait_for_timeout(300)
